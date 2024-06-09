@@ -51,7 +51,7 @@ The script generates the following files for each PDF:
     {book_title}_zipf_analysis.png: Plot for analyzing compliance with Zipf's Law.
     {book_title}_pareto_analysis.png: Plot for analyzing compliance with Pareto Distribution.
     word_frequency.csv: CSV file containing all words and their frequencies.
-
+    {book_title}_frequency_distribution.pdf: Bar chart visualizing all frequecies.
 # License
 
 This project is licensed under the MIT License.
