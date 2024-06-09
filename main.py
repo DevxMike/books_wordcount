@@ -15,13 +15,12 @@ def read_pdf(file_path):
         return text
 
 def clean_text(text):
-    cleaned_text = re.sub(r'\W+', ' ', text)  # Usuwa znaki nie będące literami ani cyframi
-    cleaned_text = cleaned_text.lower()  # Zamienia na małe litery
+    cleaned_text = re.sub(r'\W+', ' ', text) 
+    cleaned_text = cleaned_text.lower()  
     return cleaned_text
 
 def generate_word_statistics(text):
     words = text.split()
-    # Usuń pojedyncze wyrazy składające się z jednej lub dwóch liter
     words = [word for word in words if len(word) > 3]
     word_count = len(words)
     word_frequency = Counter(words)
@@ -66,7 +65,6 @@ def zipf_analysis(word_frequency, book_title, folder):
     plt.tight_layout()
     plt.savefig(os.path.join(folder, f'{book_title}_zipf_analysis.png'))
     plt.close()
-    # Sprawdzenie czy Prawo Zipfa jest spełnione
     if all(frequencies[i] >= frequencies[i+1] for i in range(len(frequencies)-1)):
         zipf_result = "Prawo Zipfa jest spełnione."
     else:
@@ -84,7 +82,6 @@ def pareto_analysis(word_frequency, book_title, folder):
     plt.tight_layout()
     plt.savefig(os.path.join(folder, f'{book_title}_pareto_analysis.png'))
     plt.close()
-    # Sprawdzenie czy Rozkład Pareto jest spełniony
     if all(cumulative_frequency[i] >= cumulative_frequency[i-1] for i in range(1, len(cumulative_frequency))):
         pareto_result = "Rozkład Pareto jest spełniony."
     else:
@@ -106,7 +103,7 @@ def write_csv(word_frequency, folder):
             writer.writerow([word, frequency])
 
 def main():
-    BOOK_TITLES = ('kucharz.pdf', 'maklowicz.pdf', 'baltyckie.pdf')  # Lista tytułów książek
+    BOOK_TITLES = ('kucharz.pdf', 'maklowicz.pdf', 'baltyckie.pdf')  
     for book_title in BOOK_TITLES:
         folder = create_folder(book_title)
         stdout_file = os.path.join(folder, f'{book_title}_stdout.txt')
