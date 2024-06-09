@@ -25,13 +25,13 @@ This Python script analyzes the word frequency distribution of texts extracted f
     Clone the repository or download the script.
     Install the required dependencies using pip:
 
-pip install PyPDF2 matplotlib
+    pip install PyPDF2 matplotlib
 
 Place your PDF files in the same directory as the script.
 Update the BOOK_TITLES variable in the script with the names of your PDF files.
 Run the script:
 
-    python word_frequency_analysis.py
+    python3 main.py
 
     The script will generate analysis results, visualizations, and CSV files for each PDF file in separate folders.
 
