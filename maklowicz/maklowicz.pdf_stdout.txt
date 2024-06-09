@@ -1,0 +1,24 @@
+Total word count for maklowicz.pdf: 14731
+Top 20 most frequent words:
+dodaç: 235
+adniki: 191
+dzia: 186
+ania: 186
+plan: 173
+pieprz: 131
+logos: 130
+patelni: 122
+dodajemy: 106
+smak: 94
+cebul: 76
+cebula: 72
+wymieszaç: 71
+nast: 68
+pnie: 68
+wrzuciç: 67
+kraina: 65
+astral: 65
+life: 65
+zupa: 65
+Prawo Zipfa jest spełnione.
+Rozkład Pareto jest spełniony.

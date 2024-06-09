@@ -1,0 +1,24 @@
+Total word count for kucharz.pdf: 93382
+Top 20 most frequent words:
+można: 649
+cukru: 587
+trochę: 579
+masła: 573
+deka: 554
+przez: 546
+włożyć: 545
+dobrze: 509
+mąki: 426
+wody: 415
+dodać: 414
+wlać: 401
+pokrajać: 398
+masłem: 380
+jest: 368
+potem: 357
+wziąć: 346
+zagotować: 340
+gotować: 312
+ugotować: 295
+Prawo Zipfa jest spełnione.
+Rozkład Pareto jest spełniony.
